@@ -33,6 +33,18 @@ public class AtivCiclo3IMC {
         
         if (total < 17) {
             JOptionPane.showMessageDialog(null,"VOCÊ ESTÁ MUITO ABAIXO DO PESO");
+        }else if (total >=17 && total <= 18.49) {
+            JOptionPane.showMessageDialog(null,"VOCÊ ESTA ABAIXO DO PESO");
+        }else if(total >= 18.50 && total <=24.99){
+            JOptionPane.showMessageDialog(null,"PESO NORMAL");
+        }else if (total >=25 && total <= 29.99) {
+            JOptionPane.showMessageDialog(null,"ACIMA DO PESO");
+        }else if (total >=30 && total <= 34.99) {
+            JOptionPane.showMessageDialog(null,"OBESIDADE 1");
+        }else if (total >=35 && total <=39.99) {
+            JOptionPane.showMessageDialog(null,"OBESIDADE II (SEVERA)");
+        }else{
+            JOptionPane.showMessageDialog(null, "OBESIDADE III (MORBIDA");
         }
     }
     
